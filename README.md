@@ -1,3 +1,3 @@
-# Challenge ONE | React - AluraFlix
+# Challenge ONE | Alura-Encoder
 
 
