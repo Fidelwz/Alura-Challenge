@@ -25,7 +25,7 @@
         <label class="" for="texto"></label>
       </div>
       <div class="m-1 ">
-        <input id="textData" placeholder="Ingrese el texto aqui" class="w-full h-32 p-2 border  rounded-md  border-none resize-none focus:outline-none   font-extrabold  text-white placeholder-white text-2xl sm:text-4xl dark:bg-slate-900"/>
+        <input id="textData" placeholder="Ingrese el texto aqui" class="w-full h-32 p-2 border  rounded-md  border-none resize-none focus:outline-none   font-extrabold  text-white placeholder-white text-2xl sm:text-4xl dark:bg-slate-900" required/>
       </div>
 
       <div class="flex flex-col justify-end">
@@ -41,7 +41,7 @@
           <div class="flex flex-col justify-end">
             <div class="flex justify-center gap-4 ">
               <button type="submit" id="encriptarBtn" class="flex w-full h-10 justify-center rounded-lg bg-[#0A3871] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Encriptar</button>
-              <button type="submit"
+              <button type="submit"id="desencriptarBtn"
                 class="flex w-full h-10 justify-center rounded-lg bg-[#D8DFE8] px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Desencriptar</button>
             </div>
           </div>
@@ -52,15 +52,14 @@
 
     <!-- Aside -->
     <aside class=" sm:col-[6/9] lg:col-[7/9]  sm:flex w-full  sm:justify-center md:justify-end">
-      <div
-        class="bg-indigo-500 shadow-lg shadow-indigo-500/50 bg-blue-100 rounded rounded-lg flex flex-col justify-center h-full  ">
+      <div class="bg-indigo-500 shadow-lg shadow-indigo-500/50 bg-blue-100 rounded rounded-lg flex flex-col justify-center h-full">
 
-        <div
-          class="flex flex-col justify-center items-center max-w-md mx-auto sm:pt-6  sm:pb-8 text-left sm:pb-12 sm:pt-12 sm:text-center">
-          <img src="./images/Muñeco.png" alt="">
-          <p class="font-semibold text-white sm:mt-5 ">Ningún mensaje fue encontrado</p>
+        <div id="lateralText" class="w-[19.1rem] flex flex-col justify-center items-center max-w-md mx-auto sm:pt-6 sm:pb-8 text-left sm:pb-12 sm:pt-12 sm:text-center">
+          <img id="imageLateral" src="./images/Muñeco.png" alt="w-auto">
+          <p id="textoSalida" class="font-semibold text-white sm:mt-5 p-1 overflow-auto whitespace-pre-wrap max-w-[18rem] break-all">Ningún mensaje fue encontrado</p>
+          <button type="submit" id="copiarTexto" class="hidden flex w-40 mt-5 h-10 justify-center rounded-lg bg-[#D8DFE8] px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Copiar</button>
         </div>
-
+      
       </div>
     </aside>
 
